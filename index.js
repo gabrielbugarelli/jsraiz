@@ -11,13 +11,21 @@
  * size - retona o tamanho do map
  **/
 
-const mapa = new Map([
-  [1, 'gabriel'],
-  [2, 'nelcael'],
-  [3, 'pedro'],
-  [4, 'letycia'],
-])
+const usuarios = new Map;
 
-mapa.set(5, 'tokashiki')
+usuarios.set(0, { nome: 'Gabriel', pais: 'Brasil' })
+usuarios.set(1, { nome: 'Pedro', pais: 'Brasil' })
+usuarios.set(2, { nome: 'Nelcael', pais: 'Brasil' })
+usuarios.set(3, { nome: 'Tokashiki', pais: 'Japão' })
 
-console.log('Mapa: ', mapa.values());
+//Filtra todos os usuários do brasil e instancia dentro da variável
+const arrayUsuariosBrasil =
+  Array.from(usuarios.entries())
+    .filter((users) => {
+      return users[1].pais === 'Brasil'
+    })
+
+//instancia um arrayUsuariosBrasil como Map em usuariosBrasil
+const usuariosBrasil = new Map(arrayUsuariosBrasil)
+
+console.log(usuariosBrasil);
