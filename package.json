@@ -1,0 +1,23 @@
+{
+  "name": "jsraiz",
+  "version": "1.0.0",
+  "description": "Javascript puro, 100% raiz.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielbugarelli/jsraiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielbugarelli/jsraiz/issues"
+  },
+  "homepage": "https://github.com/gabrielbugarelli/jsraiz#readme",
+  "dependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
