@@ -9,7 +9,7 @@
  * values - retorna todos os valores do map
  * entries - retona um iterável
  * size - retona o tamanho do map
- **/
+**/
 
 const usuarios = new Map;
 
